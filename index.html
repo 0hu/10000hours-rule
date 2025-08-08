@@ -3,72 +3,131 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="1만 시간의 법칙을 통해 전문가가 되기까지 필요한 훈련 시간을 계산해보세요."
+    />
     <title>10000hours-rule</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+
+    <style></style>
   </head>
   <body>
     <header>
-      <img src="./images/title.svg" alt="1만 시간의 법칙 로고" />
+      <h1>
+        <img src="./images/title.svg" alt="1만 시간의 법칙" />
+      </h1>
     </header>
+
     <main>
-      <section>
-        <h1>1만시간의 법칙</h1>
-        <p>“연습은 어제의 당신보다 당신을 더 낫게 만든다.”</p>
+      <section aria-labelledby="intro-heading">
+        <h2 id="intro-heading" class="visually-hidden">1만 시간의 법칙 소개</h2>
+        <img src="./images/왼쪽.svg" alt="인용 부호 아이콘" />
+        <blockquote>
+          <p>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</p>
+        </blockquote>
+
         <p>
           1만 시간의 법칙은 어떤 분야의 전문가가 되기 위해서는 최소한 1만 시간의
           훈련이 필요하다는 법칙이다.
         </p>
-      </section>
-      <section>
-        <p>나는 프로그래밍 전문가가 될 것이다.</p>
-        <p>그래서 앞으로 매일 하루에</p>
-        <p>시간씩 훈련할 것이다.</p>
+        <img src="./images/오른쪽.svg" alt="인용 부호 아이콘" />
       </section>
 
-      <section>
-        <p>나는 며칠 동안 훈련을 해야 1만 시간이 될까?</p>
-        <img src="./images/icon.svg" alt="시간 확인" />
+      <section aria-labelledby="plan-heading">
+        <h2 id="plan-heading" class="visually-hidden">훈련 계획 설정</h2>
+        <form id="training-form" novalidate>
+          <fieldset>
+            <legend class="visually-hidden">전문 분야와 훈련 시간 입력</legend>
+
+            <div class="input-group">
+              <span>나는</span>
+              <label for="field-input"></label>
+              <input
+                type="text"
+                id="field-input"
+                name="field"
+                placeholder="예: 프로그래밍"
+                aria-describedby="field-help"
+                required
+                autocomplete="off"
+              />
+              <span>전문가가 될 것이다.</span>
+            </div>
+
+            <div class="input-group">
+              <p>그래서 앞으로 매일 하루에</p>
+              <label for="hours-input" class="visually-hidden"
+                >하루 훈련 시간
+              </label>
+              <input
+                type="number"
+                id="hours-input"
+                name="hours"
+                min="1"
+                max="24"
+                placeholder="예: 5"
+                aria-describedby="hours-help"
+                required
+              />
+              <span id="hours-help" class="help-text"
+                >시간씩 훈련할 것이다.</span
+              >
+            </div>
+          </fieldset>
+        </form>
       </section>
 
-      <section>
-        <p>당신은</p>
-        <p>프로그래밍</p>
-        <p>전문가가 되기 위해서</p>
-        <p>대략</p>
-        <p>5110</p>
-        <p>일 이상 훈련하셔야 합니다! :</p>
+      <section aria-labelledby="calculate-heading">
+        <h2 id="calculate-heading" class="visually-hidden">훈련 일수 계산</h2>
+        <button type="button" aria-describedby="calculate-question">
+          나는 며칠 동안 훈련을 해야 1만 시간이 될까?
+        </button>
+        <p id="calculate-question" class="visually-hidden">
+          계산 버튼을 클릭하면 필요한 훈련 일수를 알 수 있습니다.
+        </p>
+        <img src="./images/icon.svg" alt="" />
       </section>
 
-      <section>
+      <section aria-labelledby="result-heading">
+        <h2 id="result-heading" class="visually-hidden">계산 결과</h2>
+        <div>
+          <p>당신은</p>
+          <p>프로그래밍</p>
+          <p>전문가가 되기 위해서</p>
+        </div>
+        <div>
+          <p>대략</p>
+          <p>5110</p>
+          <p>일 이상 훈련하셔야 합니다! :</p>
+        </div>
+      </section>
+
+      <section aria-labelledby="select-heading">
+        <h2 id="select-heading" class="visually-hidden">행동 선택</h2>
         <ul>
-          <li>훈련하러 가기 GO! GO!</li>
-          <li>공유하기</li>
+          <li><button type="button">훈련하러 가기 GO! GO!</button></li>
+          <li><button type="button">공유하기</button></li>
         </ul>
       </section>
 
-      <aside class="overlay" role="dialog" aria-labelledby="overlay-title">
+      <aside role="dialog" aria-labelledby="overlay-title">
         <h2 id="overlay-title">화이팅!!!</h2>
         <p>당신의 꿈을 응원합니다!</p>
 
         <figure>
           <img
-            src="./images/라이캣.svg"
+            src="./images/라이캣.png"
             alt="응원하는 귀여운 라이캣 일러스트"
           />
         </figure>
 
-        <button type="button" class="btn btn--primary">
-          훈련하러 가기 GO! GO!
-        </button>
+        <button type="button" class="btn">훈련하러 가기 GO! GO!</button>
       </aside>
     </main>
     <footer>
-      <img
-        style="background-color: pink"
-        src="./images/logo.svg"
-        alt="weniv logo"
-      />
+      <img src="./images/logo.svg" alt="weniv logo" />
       <small>
         본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
