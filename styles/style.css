@@ -36,7 +36,9 @@
 
 :root {
   --purple: #5b2386;
+  --quoteColor: #f5df4d;
   --yellow: #fcee21;
+  --white: #ffffff;
 }
 
 .visually-hidden {
@@ -63,7 +65,7 @@ body {
 }
 
 header {
-  padding: 64px 41px;
+  padding: 64px 41px 0 41px;
 }
 
 header h1 img {
@@ -71,4 +73,47 @@ header h1 img {
   height: 130px;
   max-width: 100%;
   height: auto;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-section {
+  padding: 32px;
+}
+
+#quote {
+  font-family: OTEnjoystoriesBA;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 100%;
+  color: var(--quoteColor);
+}
+
+.intro-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.description-with-quotes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.description-text p {
+  text-align: center;
+  color: var(--white);
+  font-family: "GmarketSansMedium";
+}
+
+.rule-title {
+  font-family: "GmarketSansBold";
 }
