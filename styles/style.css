@@ -53,6 +53,10 @@
   border: 0;
 }
 
+html {
+  font-size: 10px;
+}
+
 body {
   background-color: var(--purple);
   padding: 0;
@@ -60,19 +64,40 @@ body {
 
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
+  justify-content: flex-start;
   align-items: center;
 }
 
+.btn {
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: "GmarketSansBold";
+  font-size: 1.4rem;
+  border-radius: 1.2rem;
+  box-shadow: 2px 4px 10px 0px #00000026;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 2px 6px 12px 0px #00000040;
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: 1px 2px 6px 0px #00000026;
+}
+
 header {
-  padding: 64px 41px 0 41px;
+  padding: 6.4rem 4.1rem 0 4.1rem;
 }
 
 header h1 img {
-  width: 278px;
-  height: 130px;
   max-width: 100%;
   height: auto;
+  aspect-ratio: 278 / 130;
 }
 
 main {
@@ -80,16 +105,16 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex: 1;
 }
 
 .quote-section {
-  padding: 32px;
+  padding: 3.2rem;
 }
 
 #quote {
   font-family: OTEnjoystoriesBA;
-  font-weight: 700;
-  font-size: 22px;
+  font-size: 2.2rem;
   line-height: 100%;
   color: var(--quoteColor);
 }
@@ -99,8 +124,9 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-left: 15px;
-  padding-right: 15px;
+  margin-bottom: 6rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .description-with-quotes {
@@ -112,8 +138,208 @@ main {
   text-align: center;
   color: var(--white);
   font-family: "GmarketSansMedium";
+  font-size: 14px;
+  line-height: 2.5rem;
 }
 
 .rule-title {
   font-family: "GmarketSansBold";
+  font-size: 1.4rem;
+}
+
+.plan-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 2rem;
+  margin-bottom: 8rem;
+}
+
+.plan-section form,
+.plan-section fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.input-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "GmarketSansMedium";
+  font-size: 14px;
+  color: var(--white);
+  white-space: nowrap;
+  flex-wrap: nowrap;
+}
+
+.plan-section input {
+  border: none;
+  outline: none;
+  background: var(--white);
+  border-radius: 0.8rem;
+  font-family: "GmarketSansMedium";
+  font-size: 14px;
+  color: #333;
+  width: 15.6rem;
+  height: 3.8rem;
+  text-align: center;
+}
+
+.plan-section input:focus {
+  outline: 2px solid var(--yellow);
+}
+
+.plan-section input::placeholder {
+  color: #999;
+}
+
+.calculate-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 6.8rem;
+}
+
+.calculate-btn {
+  background: var(--yellow);
+  color: var(--purple);
+  font-family: "GmarketSansBold";
+  font-size: 1.4rem;
+  width: 24rem;
+  height: 7.2rem;
+  padding: 2rem 3.8rem;
+  position: relative;
+}
+
+.calculate-btn::after {
+  content: "";
+  position: absolute;
+  width: 43px;
+  height: 48px;
+  background-image: url("../images/icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: -15px;
+  right: -45px;
+}
+
+.result-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5.2rem;
+}
+
+.result-section p {
+  font-family: GmarketSansMedium;
+  font-size: 1.2rem;
+  color: var(--white);
+  text-align: center;
+}
+
+.result-section p span {
+  font-family: "GmarketSansBold";
+  font-size: 2.4rem;
+  margin: 0 1.2rem;
+}
+
+.select-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 6rem;
+  /* left: 2.4rem; */
+}
+
+.select-section ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 1.8rem;
+}
+
+.select-section li .btn:first-child {
+  background: var(--yellow);
+  color: var(--purple);
+  width: 20.3rem;
+  height: 4.6rem;
+}
+
+.select-section li:last-child .btn {
+  background: var(--white);
+  color: var(--purple);
+  width: 10.2rem;
+  height: 4.6rem;
+}
+
+.overlay {
+  width: 33rem;
+  height: 50rem;
+  border-radius: 2rem;
+  background: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 4.2rem 4.5rem 4.5rem;
+  margin-bottom: 5rem;
+  box-shadow: 4px 4px 30px 0px #00000026;
+}
+
+.overlay p {
+  font-family: "OTEnjoystoriesBA";
+  font-size: 64px;
+  color: var(--purple);
+  text-align: center;
+  line-height: 0.8;
+  margin-bottom: 2.4rem;
+}
+
+.overlay p span {
+  font-size: 3.6rem;
+}
+
+.overlay figure {
+  margin-bottom: 2.4rem;
+}
+
+.overlay .btn {
+  background: var(--yellow);
+  color: var(--purple);
+  width: 24rem;
+  height: 7.2rem;
+  font-family: "GmarketSansBold";
+  font-size: 1.8rem;
+  border-radius: 1.2rem;
+  margin-top: auto;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.8rem;
+  gap: 12px;
+}
+
+footer small {
+  font-family: "Noto Sans KR";
+  font-size: 12px;
+  color: var(--white);
+  text-align: center;
 }

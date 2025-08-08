@@ -43,101 +43,106 @@
         </div>
       </section>
 
-      <section aria-labelledby="plan-heading">
+      <section class="plan-section" aria-labelledby="plan-heading">
         <h2 id="plan-heading" class="visually-hidden">훈련 계획 설정</h2>
         <form id="training-form" novalidate>
           <fieldset>
             <legend class="visually-hidden">전문 분야와 훈련 시간 입력</legend>
 
             <div class="input-group">
-              <span>나는</span>
-              <label for="field-input"></label>
-              <input
-                type="text"
-                id="field-input"
-                name="field"
-                placeholder="예: 프로그래밍"
-                aria-describedby="field-help"
-                required
-                autocomplete="off"
-              />
-              <span>전문가가 될 것이다.</span>
-            </div>
+              <div class="input-row">
+                <span>나는</span>
+                <input
+                  type="text"
+                  id="field-input"
+                  name="field"
+                  placeholder="예) 프로그래밍"
+                  required
+                  autocomplete="off"
+                />
+                <span>전문가가 될 것이다.</span>
+              </div>
 
-            <div class="input-group">
-              <p>그래서 앞으로 매일 하루에</p>
-              <label for="hours-input" class="visually-hidden"
-                >하루 훈련 시간
-              </label>
-              <input
-                type="number"
-                id="hours-input"
-                name="hours"
-                min="1"
-                max="24"
-                placeholder="예: 5"
-                aria-describedby="hours-help"
-                required
-              />
-              <span id="hours-help" class="help-text"
-                >시간씩 훈련할 것이다.</span
-              >
+              <div class="input-row">
+                <span>그래서 앞으로 매일 하루에</span>
+              </div>
+
+              <div class="input-row">
+                <input
+                  type="number"
+                  id="hours-input"
+                  name="hours"
+                  placeholder="예) 5시간"
+                  required
+                  min="1"
+                  max="24"
+                />
+                <span>시간씩 훈련할 것이다.</span>
+              </div>
             </div>
           </fieldset>
         </form>
       </section>
 
-      <section aria-labelledby="calculate-heading">
+      <section class="calculate-section" aria-labelledby="calculate-heading">
         <h2 id="calculate-heading" class="visually-hidden">훈련 일수 계산</h2>
-        <button type="button" aria-describedby="calculate-question">
+        <button
+          type="button"
+          class="btn calculate-btn"
+          aria-describedby="calculate-question"
+        >
           나는 며칠 동안 훈련을 해야 1만 시간이 될까?
         </button>
         <p id="calculate-question" class="visually-hidden">
           계산 버튼을 클릭하면 필요한 훈련 일수를 알 수 있습니다.
         </p>
-        <img src="./images/icon.svg" alt="" />
       </section>
 
-      <section aria-labelledby="result-heading">
+      <section class="result-section" aria-labelledby="result-heading">
         <h2 id="result-heading" class="visually-hidden">계산 결과</h2>
-        <div>
-          <p>당신은</p>
-          <p>프로그래밍</p>
-          <p>전문가가 되기 위해서</p>
-        </div>
-        <div>
-          <p>대략</p>
-          <p>5110</p>
-          <p>일 이상 훈련하셔야 합니다! :</p>
-        </div>
+        <p>
+          당신은 <span>프로그래밍</span> 전문가가 되기 위해서<br />
+          대략 <span>5110</span> 일 이상 훈련하셔야 합니다! :)
+        </p>
       </section>
 
-      <section aria-labelledby="select-heading">
+      <section class="select-section" aria-labelledby="select-heading">
         <h2 id="select-heading" class="visually-hidden">행동 선택</h2>
         <ul>
-          <li><button type="button">훈련하러 가기 GO! GO!</button></li>
-          <li><button type="button">공유하기</button></li>
+          <li>
+            <button type="button" class="btn">훈련하러 가기 GO! GO!</button>
+          </li>
+          <li><button type="button" class="btn">공유하기</button></li>
         </ul>
       </section>
 
-      <aside role="dialog" aria-labelledby="overlay-title">
-        <h2 id="overlay-title">화이팅!!!</h2>
-        <p>당신의 꿈을 응원합니다!</p>
+      <aside class="overlay" role="dialog" aria-labelledby="overlay-title">
+        <h2 id="overlay-title" class="visually-hidden">
+          당신의 꿈을 응원합니다
+        </h2>
+        <p>화이팅!!<br /><span>당신의 꿈을 응원합니다!</span></p>
 
         <figure>
-          <img
-            src="./images/라이캣.png"
-            alt="응원하는 귀여운 라이캣 일러스트"
-          />
+          <picture>
+            <source srcset="./images/라이캣.webp" type="image/webp" />
+            <img
+              src="./images/라이캣.png"
+              alt="응원하는 귀여운 라이캣 일러스트"
+            />
+          </picture>
         </figure>
 
-        <button type="button" class="btn">훈련하러 가기 GO! GO!</button>
+        <button type="button" class="btn">
+          종료하고 진짜<br />
+          훈련하러 가기 GO!GO!
+        </button>
       </aside>
     </main>
+
     <footer>
       <img src="./images/logo.svg" alt="weniv logo" />
       <small>
-        본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
+        본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.<br />
         수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
       </small>
     </footer>
