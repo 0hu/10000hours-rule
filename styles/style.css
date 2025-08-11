@@ -147,15 +147,13 @@ main {
 }
 
 .intro-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 6rem;
 }
 
 .description-with-quotes {
   display: flex;
+  justify-content: center;
+  align-items: center;
   justify-content: space-between;
 }
 
