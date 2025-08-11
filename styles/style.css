@@ -468,12 +468,6 @@ main {
   border-radius: 1.2rem;
 }
 
-@media (max-width: 599px) {
-  .overlay .btn .mobile-line {
-    width: 100%;
-  }
-}
-
 @media (min-width: 600px) {
   .overlay {
     padding: 8rem 14.6rem;
