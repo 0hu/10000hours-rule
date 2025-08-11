@@ -364,9 +364,6 @@ main {
 }
 
 .select-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 6rem;
 }
 
@@ -375,12 +372,15 @@ main {
   justify-content: center;
   align-items: center;
   list-style: none;
-  gap: 1.8rem;
+  gap: 0.8rem;
+  padding: 0;
+  margin: 0;
 }
 
-.select-section li .btn:first-child {
+.select-section li:first-child .btn {
   background: var(--yellow);
   color: var(--purple);
+  font-size: 1.4rem;
   width: 20.3rem;
   height: 4.6rem;
 }
@@ -388,8 +388,35 @@ main {
 .select-section li:last-child .btn {
   background: var(--white);
   color: var(--purple);
+  font-size: 1.4rem;
   width: 10.2rem;
   height: 4.6rem;
+}
+
+@media (min-width: 600px) {
+  .select-section {
+    margin-bottom: 6rem;
+  }
+
+  .select-section ul {
+    gap: 1.2rem;
+  }
+
+  .select-section li:first-child .btn {
+    background: var(--yellow);
+    color: var(--purple);
+    font-size: 2.4rem;
+    width: 36.5rem;
+    height: 6.4rem;
+  }
+
+  .select-section li:last-child .btn {
+    background: var(--white);
+    color: var(--purple);
+    font-size: 2.4rem;
+    width: 19.3rem;
+    height: 6.4rem;
+  }
 }
 
 .overlay {
