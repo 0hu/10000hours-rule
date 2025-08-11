@@ -131,8 +131,19 @@ main {
 #quote {
   font-family: "OTEnjoystoriesBA";
   font-size: 2.2rem;
-  line-height: 100%;
   color: var(--quoteColor);
+}
+
+@media (min-width: 600px) {
+  .quote-section {
+    margin-bottom: 8rem;
+  }
+
+  #quote {
+    font-family: "OTEnjoystoriesBA";
+    font-size: 3.6rem;
+    color: var(--quoteColor);
+  }
 }
 
 .intro-section {
