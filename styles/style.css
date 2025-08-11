@@ -129,7 +129,7 @@ main {
 }
 
 #quote {
-  font-family: OTEnjoystoriesBA;
+  font-family: "OTEnjoystoriesBA";
   font-size: 2.2rem;
   line-height: 100%;
   color: var(--quoteColor);
@@ -267,7 +267,7 @@ main {
 }
 
 .result-section p {
-  font-family: GmarketSansMedium;
+  font-family: "GmarketSansMedium";
   font-size: 1.2rem;
   color: var(--white);
   text-align: center;
