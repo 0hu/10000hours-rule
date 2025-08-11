@@ -328,7 +328,7 @@ main {
 .result-section {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
   margin-bottom: 5.2rem;
 }
 
@@ -343,6 +343,21 @@ main {
   font-family: "GmarketSansBold";
   font-size: 2.4rem;
   margin: 0 1.2rem;
+}
+
+@media (min-width: 600px) {
+  .result-section {
+    margin-bottom: 12rem;
+  }
+
+  .result-section p {
+    font-size: 2.4rem;
+  }
+
+  .result-section p span {
+    font-size: 7.2rem;
+    margin: 0 1.2rem;
+  }
 }
 
 .select-section {
