@@ -16,7 +16,15 @@
   <body>
     <header>
       <h1>
-        <img src="./images/title.svg" alt="1만 시간의 법칙" />
+        <picture>
+          <source
+            media="(min-width: 600px)"
+            srcset="./images/title-desktop.webp"
+            type="image/webp"
+          />
+          <source srcset="./images/title-mobile.webp" type="image/webp" />
+          <img src="./images/title.svg" alt="1만 시간의 법칙" />
+        </picture>
       </h1>
     </header>
 
