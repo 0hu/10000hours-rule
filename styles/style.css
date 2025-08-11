@@ -224,6 +224,7 @@ main {
   color: var(--white);
   white-space: nowrap;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .plan-section input {
@@ -239,11 +240,9 @@ main {
   text-align: center;
 }
 
-@media (max-width: 599px) {
-  #mobile-line {
-    width: 100%;
-    text-align: center;
-  }
+.mobile-line {
+  display: block;
+  width: 100%;
 }
 
 .plan-section input:focus {
@@ -266,6 +265,11 @@ main {
     font-size: 2.4rem;
     width: 22.8rem;
     height: 5.6rem;
+  }
+
+  .mobile-line {
+    display: inline;
+    width: auto;
   }
 }
 
@@ -421,8 +425,6 @@ main {
 }
 
 .overlay {
-  width: 33rem;
-  height: 50rem;
   border-radius: 2rem;
   background: var(--white);
   display: flex;
@@ -431,6 +433,12 @@ main {
   align-items: center;
   padding: 4rem 4.2rem 4.5rem 4.5rem;
   box-shadow: 4px 4px 30px 0px #00000026;
+
+  width: 80%;
+  max-width: 33rem;
+  min-width: 50rem;
+
+  height: auto;
 }
 
 .overlay p {
@@ -453,11 +461,53 @@ main {
 .overlay .btn {
   background: var(--yellow);
   color: var(--purple);
-  width: 24rem;
-  height: 7.2rem;
+  /* width: 24rem;
+  height: 7.2rem; */
   font-family: "GmarketSansBold";
   font-size: 1.8rem;
   border-radius: 1.2rem;
+}
+
+@media (max-width: 599px) {
+  .overlay .btn .mobile-line {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .overlay {
+    padding: 8rem 14.6rem;
+
+    width: 100%;
+    max-width: 80rem;
+    min-width: 81.6rem;
+
+    height: auto;
+  }
+
+  .overlay p {
+    font-size: 9.6rem;
+    line-height: 0.8;
+    margin-bottom: 4rem;
+  }
+
+  .overlay p span {
+    font-size: 3.6rem;
+  }
+
+  .overlay figure {
+    margin-bottom: 2.4rem;
+  }
+
+  .overlay .btn {
+    width: 100%;
+    max-width: 50.8rem;
+    min-width: 6.4rem;
+
+    height: auto;
+    padding: 2rem 5rem;
+    font-size: 2.4rem;
+  }
 }
 
 footer {
