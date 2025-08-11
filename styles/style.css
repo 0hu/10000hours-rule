@@ -395,7 +395,7 @@ main {
 
 @media (min-width: 600px) {
   .select-section {
-    margin-bottom: 6rem;
+    margin-bottom: 12rem;
   }
 
   .select-section ul {
