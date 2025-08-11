@@ -329,7 +329,9 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   margin-bottom: 5.2rem;
+  gap: 1.2rem;
 }
 
 .result-section p {
@@ -343,6 +345,7 @@ main {
   font-family: "GmarketSansBold";
   font-size: 2.4rem;
   margin: 0 1.2rem;
+  vertical-align: middle;
 }
 
 @media (min-width: 600px) {
