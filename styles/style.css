@@ -152,8 +152,6 @@ main {
   justify-content: center;
   align-items: center;
   margin-bottom: 6rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
 }
 
 .description-with-quotes {
@@ -165,13 +163,32 @@ main {
   text-align: center;
   color: var(--white);
   font-family: "GmarketSansMedium";
-  font-size: 14px;
+  font-size: 1.4rem;
   line-height: 2.5rem;
 }
 
 .rule-title {
   font-family: "GmarketSansBold";
   font-size: 1.4rem;
+}
+
+@media (min-width: 600px) {
+  .intro-section {
+    margin-bottom: 6rem;
+  }
+
+  .description-with-quotes {
+    gap: 2rem;
+  }
+
+  .description-text p {
+    font-size: 2.4rem;
+    line-height: 3.2rem;
+  }
+
+  .rule-title {
+    font-size: 2.4rem;
+  }
 }
 
 .plan-section {
