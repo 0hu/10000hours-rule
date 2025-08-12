@@ -151,7 +151,14 @@
 
         <figure>
           <picture>
-            <source srcset="./images/라이캣.webp" type="image/webp" />
+            <source
+              media="(min-width: 600px)"
+              srcset="./images/라이캣.webp"
+              type="image/webp"
+            />
+            <source media="(min-width: 600px)" srcset="./images/라이캣.png" />
+            <source srcset="./images/라이캣 모바일.webp" type="image/webp" />
+            <source srcset="./images/라이캣 모바일.png" />
             <img
               src="./images/라이캣.png"
               alt="응원하는 귀여운 라이캣 일러스트"

@@ -459,6 +459,12 @@ main {
   margin-bottom: 2.4rem;
 }
 
+.overlay figure img {
+  width: 100%;
+  height: auto;
+  max-width: 24rem;
+}
+
 .overlay .btn {
   background: var(--yellow);
   color: var(--purple);
@@ -489,6 +495,12 @@ main {
 
   .overlay figure {
     margin-bottom: 2.4rem;
+  }
+
+  .overlay figure img {
+    width: 100%;
+    height: auto;
+    max-width: 44rem;
   }
 
   .overlay .btn {
