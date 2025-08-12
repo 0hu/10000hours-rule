@@ -245,6 +245,17 @@ main {
   width: 100%;
 }
 
+@media (min-width: 600px) {
+  .mobile-line {
+    display: inline;
+    width: auto;
+  }
+}
+
+.plan-section .mobile-line {
+  text-align: center;
+}
+
 .plan-section input:focus {
   outline: 2px solid var(--yellow);
 }
