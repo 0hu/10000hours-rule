@@ -39,6 +39,11 @@
   --quoteColor: #f5df4d;
   --yellow: #fcee21;
   --white: #ffffff;
+
+  --font-display: "OTEnjoystoriesBA", cursive, sans-serif;
+  --font-bold: "GmarketSansBold", Arial, sans-serif;
+  --font-medium: "GmarketSansMedium", Arial, sans-serif;
+  --font-regular: "Noto Sans KR", Arial, sans-serif;
 }
 
 .visually-hidden {
@@ -71,7 +76,7 @@ body {
   border: none;
   cursor: pointer;
   text-align: center;
-  font-family: "GmarketSansBold";
+  font-family: var(--font-bold);
   font-size: 1.4rem;
   border-radius: 1.2rem;
   box-shadow: 2px 4px 10px 0px #00000026;
@@ -129,7 +134,7 @@ main {
 }
 
 #quote {
-  font-family: "OTEnjoystoriesBA";
+  font-family: var(--font-display);
   font-size: 2.2rem;
   color: var(--quoteColor);
 }
@@ -140,7 +145,7 @@ main {
   }
 
   #quote {
-    font-family: "OTEnjoystoriesBA";
+    font-family: var(--font-display);
     font-size: 3.6rem;
     color: var(--quoteColor);
   }
@@ -160,13 +165,13 @@ main {
 .description-text p {
   text-align: center;
   color: var(--white);
-  font-family: "GmarketSansMedium";
+  font-family: var(--font-medium);
   font-size: 1.4rem;
   line-height: 2.5rem;
 }
 
 .rule-title {
-  font-family: "GmarketSansBold";
+  font-family: var(--font-bold);
   font-size: 1.4rem;
 }
 
@@ -219,7 +224,7 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  font-family: "GmarketSansMedium";
+  font-family: var(--font-medium);
   font-size: 1.4rem;
   color: var(--white);
   white-space: nowrap;
@@ -232,7 +237,7 @@ main {
   outline: none;
   background: var(--white);
   border-radius: 0.8rem;
-  font-family: "GmarketSansMedium";
+  font-family: var(--font-medium);
   font-size: 1.4rem;
   color: #333;
   width: 15.6rem;
@@ -294,7 +299,7 @@ main {
 .calculate-btn {
   background: var(--yellow);
   color: var(--purple);
-  font-family: "GmarketSansBold";
+  font-family: var(--font-bold);
   font-size: 1.4rem;
   width: 24rem;
   height: 7.2rem;
@@ -350,14 +355,14 @@ main {
 }
 
 .result-section p {
-  font-family: "GmarketSansMedium";
+  font-family: var(--font-medium);
   font-size: 1.2rem;
   color: var(--white);
   text-align: center;
 }
 
 .result-section p span {
-  font-family: "GmarketSansBold";
+  font-family: var(--font-bold);
   font-size: 2.4rem;
   margin: 0 1.2rem;
   vertical-align: middle;
@@ -453,7 +458,7 @@ main {
 }
 
 .overlay p {
-  font-family: "OTEnjoystoriesBA";
+  font-family: var(--font-display);
   font-size: 3.6rem;
   color: var(--purple);
   text-align: center;
@@ -479,15 +484,13 @@ main {
   background: var(--yellow);
   color: var(--purple);
   padding: 2rem 4.5rem;
-
-  font-family: "GmarketSansBold";
+  font-family: var(--font-bold);
   font-size: 1.4rem;
 }
 
 @media (min-width: 600px) {
   .overlay {
     padding: 8rem 14.6rem;
-
     width: 90vw;
     max-width: 80rem;
     height: auto;
@@ -515,7 +518,6 @@ main {
   .overlay .btn {
     max-width: 50.8rem;
     height: auto;
-
     padding: 2rem 5rem;
     font-size: 2.4rem;
     white-space: nowrap;
@@ -536,7 +538,7 @@ footer {
 }
 
 footer small {
-  font-family: "Noto Sans KR";
+  font-family: var(--font-regular);
   font-size: 0.9rem;
   color: var(--white);
   text-align: center;
