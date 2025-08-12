@@ -431,7 +431,6 @@ main {
 
   width: 90vw;
   max-width: 33rem;
-  height: auto;
 
   margin-bottom: 10rem;
 }
@@ -476,7 +475,6 @@ main {
   }
 
   .overlay p {
-    line-height: 1.2;
     margin-bottom: 4rem;
   }
 
