@@ -245,22 +245,6 @@ main {
   text-align: center;
 }
 
-.mobile-line {
-  display: block;
-  width: 100%;
-}
-
-@media (min-width: 600px) {
-  .mobile-line {
-    display: inline;
-    width: auto;
-  }
-}
-
-.plan-section .mobile-line {
-  text-align: center;
-}
-
 .plan-section input:focus {
   outline: 2px solid var(--yellow);
 }
@@ -281,11 +265,6 @@ main {
     font-size: 2.4rem;
     width: 22.8rem;
     height: 5.6rem;
-  }
-
-  .mobile-line {
-    display: inline;
-    width: auto;
   }
 }
 
@@ -552,5 +531,27 @@ footer small {
 
   footer small {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 599px) {
+  .mobile-line {
+    display: block;
+    width: 100%;
+  }
+
+  .plan-section .mobile-line {
+    text-align: center;
+  }
+
+  .overlay .btn .mobile-line {
+    width: 100%;
+  }
+}
+
+@media (min-width: 600px) {
+  .mobile-line {
+    display: inline;
+    width: auto;
   }
 }
