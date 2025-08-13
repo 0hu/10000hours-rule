@@ -425,8 +425,10 @@ body {
 .action-buttons .btn:first-child {
   width: 20.3rem;
   height: 4.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   white-space: nowrap;
-  text-align: center;
 }
 
 .action-buttons .btn:last-child {
